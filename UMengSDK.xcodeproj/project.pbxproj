@@ -8,16 +8,31 @@
 
 /* Begin PBXBuildFile section */
 		4877F680242F37BE00B40D19 /* UMengSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 4877F67E242F37BE00B40D19 /* UMengSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4877F693242F39C500B40D19 /* TestPodfile.h in Headers */ = {isa = PBXBuildFile; fileRef = 4877F691242F39C500B40D19 /* TestPodfile.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4877F67B242F37BE00B40D19 /* UMengSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UMengSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4877F67E242F37BE00B40D19 /* UMengSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UMengSDK.h; sourceTree = "<group>"; };
 		4877F67F242F37BE00B40D19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4877F686242F37DA00B40D19 /* UMAnalytics.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = UMAnalytics.podspec; sourceTree = "<group>"; };
+		4877F687242F37DB00B40D19 /* UMCommon.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = UMCommon.podspec; sourceTree = "<group>"; };
+		4877F688242F38A200B40D19 /* podpublish.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = podpublish.sh; sourceTree = "<group>"; };
+		4877F689242F38A200B40D19 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		4877F68F242F39C500B40D19 /* TestPodfile.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TestPodfile.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4877F691242F39C500B40D19 /* TestPodfile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestPodfile.h; sourceTree = "<group>"; };
+		4877F692242F39C500B40D19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		4877F678242F37BE00B40D19 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4877F68C242F39C500B40D19 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -30,7 +45,12 @@
 		4877F671242F37BE00B40D19 = {
 			isa = PBXGroup;
 			children = (
+				4877F688242F38A200B40D19 /* podpublish.sh */,
+				4877F689242F38A200B40D19 /* README.md */,
+				4877F686242F37DA00B40D19 /* UMAnalytics.podspec */,
+				4877F687242F37DB00B40D19 /* UMCommon.podspec */,
 				4877F67D242F37BE00B40D19 /* UMengSDK */,
+				4877F690242F39C500B40D19 /* TestPodfile */,
 				4877F67C242F37BE00B40D19 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -39,6 +59,7 @@
 			isa = PBXGroup;
 			children = (
 				4877F67B242F37BE00B40D19 /* UMengSDK.framework */,
+				4877F68F242F39C500B40D19 /* TestPodfile.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -52,6 +73,15 @@
 			path = UMengSDK;
 			sourceTree = "<group>";
 		};
+		4877F690242F39C500B40D19 /* TestPodfile */ = {
+			isa = PBXGroup;
+			children = (
+				4877F691242F39C500B40D19 /* TestPodfile.h */,
+				4877F692242F39C500B40D19 /* Info.plist */,
+			);
+			path = TestPodfile;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -60,6 +90,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				4877F680242F37BE00B40D19 /* UMengSDK.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4877F68A242F39C500B40D19 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4877F693242F39C500B40D19 /* TestPodfile.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,6 +122,24 @@
 			productReference = 4877F67B242F37BE00B40D19 /* UMengSDK.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		4877F68E242F39C500B40D19 /* TestPodfile */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4877F694242F39C500B40D19 /* Build configuration list for PBXNativeTarget "TestPodfile" */;
+			buildPhases = (
+				4877F68A242F39C500B40D19 /* Headers */,
+				4877F68B242F39C500B40D19 /* Sources */,
+				4877F68C242F39C500B40D19 /* Frameworks */,
+				4877F68D242F39C500B40D19 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TestPodfile;
+			productName = TestPodfile;
+			productReference = 4877F68F242F39C500B40D19 /* TestPodfile.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -94,6 +150,9 @@
 				ORGANIZATIONNAME = com.alirio.lau.www;
 				TargetAttributes = {
 					4877F67A242F37BE00B40D19 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					4877F68E242F39C500B40D19 = {
 						CreatedOnToolsVersion = 11.3.1;
 					};
 				};
@@ -112,6 +171,7 @@
 			projectRoot = "";
 			targets = (
 				4877F67A242F37BE00B40D19 /* UMengSDK */,
+				4877F68E242F39C500B40D19 /* TestPodfile */,
 			);
 		};
 /* End PBXProject section */
@@ -124,10 +184,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4877F68D242F39C500B40D19 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4877F677242F37BE00B40D19 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4877F68B242F39C500B40D19 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -303,6 +377,56 @@
 			};
 			name = Release;
 		};
+		4877F695242F39C500B40D19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = TestPodfile/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.alirio.lau.www.TestPodfile;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		4877F696242F39C500B40D19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = TestPodfile/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.alirio.lau.www.TestPodfile;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -320,6 +444,15 @@
 			buildConfigurations = (
 				4877F684242F37BE00B40D19 /* Debug */,
 				4877F685242F37BE00B40D19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4877F694242F39C500B40D19 /* Build configuration list for PBXNativeTarget "TestPodfile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4877F695242F39C500B40D19 /* Debug */,
+				4877F696242F39C500B40D19 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
